@@ -85,6 +85,7 @@
 </nav>
 <?php
 /* ---- Fallback nav (no menu assigned) ---- */
+if ( ! function_exists( 'kinetic_default_nav' ) ) :
 function kinetic_default_nav(): void {
   echo '<ul class="flex items-center space-x-10">';
   foreach ( [ 'Services' => '#services', 'Work' => '#work', 'Testimonials' => '#testimonials' ] as $label => $href ) {
@@ -92,6 +93,8 @@ function kinetic_default_nav(): void {
   }
   echo '</ul>';
 }
+endif;
+if ( ! function_exists( 'kinetic_default_nav_mobile' ) ) :
 function kinetic_default_nav_mobile(): void {
   echo '<ul class="flex flex-col space-y-4 pt-4">';
   foreach ( [ 'Services' => '#services', 'Work' => '#work', 'Testimonials' => '#testimonials' ] as $label => $href ) {
@@ -99,6 +102,7 @@ function kinetic_default_nav_mobile(): void {
   }
   echo '</ul>';
 }
+endif;
 ?>
 <?php
 /**
