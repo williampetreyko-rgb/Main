@@ -172,6 +172,36 @@ tailwind.config = {
         headline: ["Space Grotesk"],
         body: ["Manrope"],
         label: ["Inter"]
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%":       { transform: "translateY(-20px)" }
+        },
+        "float-reverse": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%":       { transform: "translateY(20px)" }
+        },
+        drift: {
+          "0%, 100%": { transform: "translate(0px, 0px)" },
+          "33%":       { transform: "translate(30px, -15px)" },
+          "66%":       { transform: "translate(-20px, 10px)" }
+        },
+        "hero-wave": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%":       { backgroundPosition: "100% 50%" }
+        },
+        "glow-pulse": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%":       { opacity: "1" }
+        }
+      },
+      animation: {
+        float:          "float 6s ease-in-out infinite",
+        "float-reverse":"float-reverse 8s ease-in-out infinite",
+        drift:          "drift 12s ease-in-out infinite",
+        "hero-wave":    "hero-wave 8s ease-in-out infinite",
+        "glow-pulse":   "glow-pulse 3s ease-in-out infinite"
       }
     }
   }

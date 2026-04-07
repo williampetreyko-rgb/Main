@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 <!-- ============================================================
      FEATURES — BENTO GRID
      ============================================================ -->
-<section id="services" class="py-32 px-8 bg-surface-container-low relative noise-texture">
+<section id="services" class="py-32 px-8 bg-surface-container-low relative noise-texture -mt-24 z-20">
   <div class="max-w-screen-2xl mx-auto">
 
     <!-- Section header -->
